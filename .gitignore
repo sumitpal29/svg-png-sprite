@@ -1,0 +1,19 @@
+# Mac specific folders
+.DS_Store
+
+# Node Modules
+node_modules/
+
+dist/*
+
+# Yarn Lock Files
+package-lock.json
+
+# Build files
+build/
+coverage/
+
+# IDE project files
+*.code-workspace
+*.sublime-project
+*.sublime-workspace

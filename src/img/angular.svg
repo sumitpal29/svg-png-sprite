@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="73px" height="72px" viewBox="0 0 73 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Angular@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="12.3813483%" y1="8.54625667%" x2="93.5909159%" y2="98.5559937%" id="linearGradient-1">
+            <stop stop-color="#FF7B81" offset="0%"></stop>
+            <stop stop-color="#DA3224" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="73" height="72" rx="6"></rect>
+        <linearGradient x1="61.8390289%" y1="33.1096088%" x2="68.3090624%" y2="80.3496797%" id="linearGradient-4">
+            <stop stop-color="#EDA2A5" offset="0%"></stop>
+            <stop stop-color="#E64A42" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="For-other-screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Framework-Artboard" transform="translate(-174.000000, -179.000000)">
+            <g id="Angular" transform="translate(174.000000, 179.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="#FFFFFF" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                </g>
+                <g id="Group" mask="url(#mask-3)" fill="url(#linearGradient-4)">
+                    <g transform="translate(-17.000000, 16.000000)" id="Path-6">
+                        <path d="M113,48.3762282 L113,56.6834167 L68.5547079,61 L3.91017214,61 L0,0 C11.549996,6.70358559 22.0044482,10.5040367 31.3633566,11.4013532 C45.4017192,12.747328 51.2371667,24.9978021 61.7131488,30.9731943 C72.189131,36.9485865 87.2509948,30.9731943 95.5855739,29.7218583 C101.14196,28.8876343 106.946769,35.1057576 113,48.3762282 Z" opacity="0.5"></path>
+                        <path d="M113,62.3762282 L113,70.6834167 L68.5547079,75 L3.91017214,75 L0,14 C11.549996,20.7035856 22.0044482,24.5040367 31.3633566,25.4013532 C45.4017192,26.747328 51.2371667,38.9978021 61.7131488,44.9731943 C72.189131,50.9485865 87.2509948,44.9731943 95.5855739,43.7218583 C101.14196,42.8876343 106.946769,49.1057576 113,62.3762282 Z" opacity="0.400000006"></path>
+                        <path d="M114,67.5151698 C108.161042,58.5956732 102.561714,54.4162788 97.2020138,54.9769867 C89.162464,55.8180486 74.6337635,59.8342958 64.5286126,55.8180486 C54.4234616,51.8018014 48.7945787,43.5678762 35.2531493,42.6632046 C26.2255296,42.0600902 16.1411466,39.5056887 5,35 L8.77175896,76 L71.1279926,76 L114,73.0986899 L114,67.5151698 Z" opacity="0.300000012"></path>
+                    </g>
+                </g>
+                <path d="M36.6934833,23 L24,49.9231293 L28.7418603,49.8462585 L31.290337,43.7726979 L42.6774406,43.7726979 L45.4678275,49.9231293 L50,50 L36.6934833,23 Z M36.7441272,32 L41,41 L33,41 L36.7441272,32 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-3)" transform="translate(37.000000, 36.500000) rotate(-360.000000) translate(-37.000000, -36.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

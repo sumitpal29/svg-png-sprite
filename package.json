@@ -1,0 +1,27 @@
+{
+  "name": "svg-png-sprite",
+  "version": "0.0.1",
+  "description": "Awesome tool to create svg and png sprites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumitpal29/svg-png-sprite.git"
+  },
+  "author": "Sumit Pal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumitpal29/svg-png-sprite/issues"
+  },
+  "homepage": "https://github.com/sumitpal29/svg-png-sprite#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-filter": "^5.1.0",
+    "gulp-size": "^2.0.0",
+    "gulp-svg-sprite": "^1.2.9",
+    "gulp-svg2png": "^2.0.2",
+    "gulp-util": "^3.0.6"
+  }
+}
