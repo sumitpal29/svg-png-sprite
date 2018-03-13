@@ -2,7 +2,7 @@
     {{#shapes}} .{{base}}{
         width: {{width.inner}}px;
         height: {{height.inner}}px;
-        background: url('../img/sprite.svg') no-repeat {{(position.absolute.x - 9)}}px {{(position.absolute.y - 9)}}px;
+        background: url('../img/sprite.svg') no-repeat {{(position.absolute.x)}}px {{(position.absolute.y)}}px;
     } 
     {{/shapes}}
 }
@@ -11,7 +11,7 @@
     {{#shapes}} .{{base}}{
         width: {{width.inner}}px;
         height: {{height.inner}}px;
-        background: url('../img/sprite.png') no-repeat {{(position.absolute.x - 9)}}px {{(position.absolute.y - 9)}}px;
+        background: url('../img/sprite.png') no-repeat {{(position.absolute.x}}px {{(position.absolute.y)}}px;
     } 
     {{/shapes}}
 }

@@ -27,14 +27,15 @@ var $ = {
 	svgSprite: require('gulp-svg-sprite'),
     size: require('gulp-size'),
     toPng: require('gulp-svg2png'),
-    filter: require('gulp-filter')
+	filter: require('gulp-filter'),
+	sass: require('gulp-sass')
 };
 
 // var changeEvent = function(evt) {
 // 	$.gutil.log('File', $.gutil.colors.cyan(evt.path.replace(new RegExp('/.*(?=/' + basePaths.src + ')/'), '')), 'was', $.gutil.colors.magenta(evt.type));
 // };
 
-gulp.task('default', function () {
+gulp.task('sprite', function () {
     return gulp.src(paths.sprite.src)
 		.pipe($.svgSprite({
 			shape: {
@@ -78,5 +79,15 @@ gulp.task('default', function () {
 // 		changeEvent(evt);
 // 	});
 // });
+ 
+gulp.task('sass', function () {
+  return gulp.src('app/sass/*.scss')
+    .pipe(sass.sync().on('error', sass.logError))
+    .pipe(gulp.dest('app/build/css'));
+});
+ 
+gulp.task('sass:watch', function () {
+  gulp.watch('./sass/**/*.scss', ['sass']);
+});
 
-//gulp.task('default', ['sprite']);
+gulp.task('default', ['sprite']);
