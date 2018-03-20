@@ -1,14 +1,15 @@
 var basePaths = {
 	dest: 'build/',
 	src: 'src/',
+	app: 'app/'
 };
 var paths = {
 	images: {
-		src: basePaths.src + 'img/',
+		src: basePaths.app + 'img/',
 		dest: basePaths.dest + 'img/'
 	},
 	sprite: {
-		src: basePaths.src + 'img/*',
+		src: basePaths.app + 'img/*',
 		svg: 'img/sprite.svg',
 		css: '../../' + basePaths.src + 'sass/src/_sprite.scss'
 	},
@@ -21,26 +22,21 @@ var paths = {
 	Let the magic begin
 */
 var gulp = require('gulp');
-
+var sass = require('gulp-sass');
 var $ = {
 	gutil: require('gulp-util'),
 	svgSprite: require('gulp-svg-sprite'),
     size: require('gulp-size'),
     toPng: require('gulp-svg2png'),
-	filter: require('gulp-filter'),
-	sass: require('gulp-sass')
+	filter: require('gulp-filter')
 };
-
-// var changeEvent = function(evt) {
-// 	$.gutil.log('File', $.gutil.colors.cyan(evt.path.replace(new RegExp('/.*(?=/' + basePaths.src + ')/'), '')), 'was', $.gutil.colors.magenta(evt.type));
-// };
 
 gulp.task('sprite', function () {
     return gulp.src(paths.sprite.src)
 		.pipe($.svgSprite({
 			shape: {
 				spacing: {
-					padding: 10
+					padding: 50
 				}
             },
             baseSize: 16,
@@ -74,16 +70,10 @@ gulp.task('sprite', function () {
         .pipe(gulp.dest(basePaths.dest));
 });
 
-// gulp.task('watch', function(){
-// 	gulp.watch(paths.sprite.src, ['sprite']).on('change', function(evt) {
-// 		changeEvent(evt);
-// 	});
-// });
- 
 gulp.task('sass', function () {
-  return gulp.src('app/sass/*.scss')
+  return gulp.src('./app/scss/*.scss')
     .pipe(sass.sync().on('error', sass.logError))
-    .pipe(gulp.dest('app/build/css'));
+    .pipe(gulp.dest('./app/build'));
 });
  
 gulp.task('sass:watch', function () {
